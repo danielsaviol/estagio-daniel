@@ -1,0 +1,29 @@
+<div class="navbar">
+  <mat-toolbar color="primary">
+    <label class="example-app-name">Daniel Films</label>
+    <mat-form-field class="search">
+      <input matInput placeholder="Search" [(ngModel)]="search">
+    </mat-form-field>
+  </mat-toolbar>
+</div>  
+
+<div class="cards">
+<mat-card class="example-card" *ngFor="let movies of _postArray | searchPipe:'title':search">
+    <mat-card-header>
+      <div class="rate" >
+          <p class="rate-score">{{movies.rt_score}}</p>
+      </div>
+      <mat-card-title>{{movies.title}}</mat-card-title>
+      <mat-card-subtitle>{{movies.release_date}} | {{movies.director}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider class="divider" [inset]="true"></mat-divider>
+    <mat-card-content>
+      <p>
+        {{movies.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-footer>
+      
+    </mat-card-footer>
+</mat-card>
+</div>

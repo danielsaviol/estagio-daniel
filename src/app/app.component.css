@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+label.example-app-name {
+  margin-left: 8px;
+  size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.search{
+  position: absolute;
+  width: 15%;
+  padding-left: 80%;
+  font-size: 20px;
+}
+
+.cards {
+  position: relative;
+  margin-top: 2cm;
+}
+
+.example-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.divider{
+  padding-bottom: 0.5cm;
+}
+
+.rate{
+  width: 40px;
+  max-height: 40px;
+  background-color: #25d141;
+  position: relative;
+  float: left;
+}
+
+.rate-score{
+  margin: 0;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
